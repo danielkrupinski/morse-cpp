@@ -4,7 +4,7 @@
 #include <iostream>
 #include <vector>
 
-std::vector<string> to_morse(const std::string&);
+std::vector<std::string> to_morse(const std::string&);
 
 #endif
 
