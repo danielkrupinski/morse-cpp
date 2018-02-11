@@ -6,7 +6,7 @@ vector<string> to_morse(const string& s)
 {
 	static const string latin {"abcdefghijklmnopqrstuvwxyz"};
 	static const string latin_capital {"ABCDEFGHIJKLMNOPQRSTUVWXYZ"};
-	static const vector<string> morse {"• −", "− • • •", "− • − •", "− • •", "•", "• • − •", "− − •", "• • • •", "• •", "• − − −", "− • −", "• − • •", "− −", "− •", "− − −", "• − − •", "− − • −", "• − •", "• • •", "−", "• • −", "• • • −", "• − −", "− • • −", "− • − −", "− − • •"};
+	static const vector<string> morse {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."};
 	
 	vector<string> in_morse {};
 	for (const auto& a : s)
