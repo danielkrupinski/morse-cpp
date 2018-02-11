@@ -9,6 +9,7 @@ int main()
 	cin >> word;
 	vector<string> in_morse {to_morse(word)};
 	for (auto& a : in_morse)
-		cout << a;
+		cout << a << ' ';
+	cout << endl;
 	return 0;
 }
