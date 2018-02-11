@@ -11,17 +11,18 @@ vector<string> to_morse(const string& s)
 	vector<string> in_morse {};
 	for (const auto& a : s)
 	{
-		for (const auto& b : latin)
-			if (b == a)
+		for (int i=0; i!=latin.size(); ++i)
+			if (latin[i] == a)
 			{
-				in_morse.push_back(morse[b]);
+				in_morse.push_back(morse[i]);
 				break;
+				continue;
 			}
 
-		for (const auto& c : latin_capital)
-			if (c == a)
+		for (int i=0; i!=latin_capital.size(); ++i)
+			if (latin_capital[i] == a)
 			{
-				in_morse.push_back(morse[c]);
+				in_morse.push_back(morse[i]);
 				break;
 			}
 	}
