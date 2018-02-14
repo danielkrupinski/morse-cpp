@@ -1,2 +1,2 @@
 # morse-cpp
-Morse code translator
+Morse code translator.
