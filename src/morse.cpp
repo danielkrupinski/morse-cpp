@@ -10,7 +10,6 @@ vector<string> to_morse(const string& s)
 	
 	vector<string> in_morse {};
 	for (const auto& a : s)
-	{
 		for (int i=0; i!=latin.size(); ++i)
 			if (latin[i] == a)
 			{
@@ -18,6 +17,5 @@ vector<string> to_morse(const string& s)
 				break;
 				continue;
 			}
-	}
 	return in_morse;
 }
