@@ -11,7 +11,7 @@ vector<string> to_morse(const string& s)
 	vector<string> in_morse {};
 	for (const auto& a : s)
 		for (int i=0; i!=latin.size(); ++i)
-			if (latin[i] == a)
+			if (a == latin[i])
 			{
 				in_morse.push_back(morse[i]);
 				break;
