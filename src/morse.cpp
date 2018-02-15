@@ -4,8 +4,8 @@ using namespace std;
 
 vector<string> to_morse(const string& s)
 {
-	static const string latin {"abcdefghijklmnopqrstuvwxyz"};
-	static const string latin_capital {"ABCDEFGHIJKLMNOPQRSTUVWXYZ"};
+	static const string latin {"abcdefghijklmnopqrstuvwxyz"
+				   "ABCDEFGHIJKLMNOPQRSTUVWXYZ"};
 	static const vector<string> morse {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."};
 	
 	vector<string> in_morse {};
