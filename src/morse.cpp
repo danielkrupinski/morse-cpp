@@ -18,13 +18,6 @@ vector<string> to_morse(const string& s)
 				break;
 				continue;
 			}
-
-		for (int i=0; i!=latin_capital.size(); ++i)
-			if (latin_capital[i] == a)
-			{
-				in_morse.push_back(morse[i]);
-				break;
-			}
 	}
 	return in_morse;
 }
