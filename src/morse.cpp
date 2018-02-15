@@ -15,7 +15,6 @@ vector<string> to_morse(const string& s)
 			{
 				in_morse.push_back(morse[i]);
 				break;
-				continue;
 			}
 	return in_morse;
 }
